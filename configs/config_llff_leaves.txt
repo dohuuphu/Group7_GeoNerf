@@ -1,0 +1,18 @@
+### INPUT
+expname = leave_test_spatial2
+logdir = ./logs
+nb_views = 3  #### Set to 7 for fine-tuning
+
+## dataset
+dataset_name = llff
+llff_path = /mnt/HDD2/sofina/data/nerf_llff_data
+scene = leaves
+
+### TESTING
+chunk = 4096  ### Reduce it to save memory
+
+### TRAINING
+num_steps = 1000
+lrate = 0.0002
+
+mode = random   ### baseline, random, spatial
